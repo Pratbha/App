@@ -1,0 +1,81 @@
+.app-container h1 {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+.user-list-container h2 {
+  text-align: center;
+}
+.user-item:first-of-type {
+  border-top: 1px solid #ccc;
+}
+.user-item {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-top: 5px;
+  height: 50px;
+}
+.user-image {
+  text-align: center;
+  width: 80px;
+}
+.user-image img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+.user-name {
+  flex: 1;
+}
+.user-profile {
+  flex: 3;
+  text-align: right;
+  padding-right: 20px;
+}
+.user-profile a::after {
+  margin-left: 10px;
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+}
+.user-name,.user-profile {
+  padding-top: 12px;
+}
+.user-item a,.user-item a:hover,.user-item a:active {
+  text-decoration: none;
+  color: #212121;
+}
+
+.user-details-section h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.user-details > div {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.user-detail-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+.user-details > .user-detail-img {
+  padding-top: 0;
+}
+.user-details .label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .user-details {
+    display: flex;
+  }
+  .user-details > div {
+    flex: 1;
+  }
+}
